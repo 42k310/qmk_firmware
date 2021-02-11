@@ -59,18 +59,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * .----------------------------------------------------------------------------------------------------------------------.
      * |  Alt |   !  |   @  |   #  |   $  |   %  |                                  |   ^  |   &  |   *  |   (  |  )   | Bksp |
      * |------+------+------+------+------+------+----------------------------------+------+------+------+------+------+------|
-     * |  GUI |   1  |   2  |  3   |   4  |   5  |                                  |   -  |   +  |  Up  |  [   |   ]  |   `  |
+     * | Ctrl |   1  |   2  |  3   |   4  |   5  |                                  |   -  |   +  |  Up  |  [   |   ]  |   `  |
      * |------+------+------+------+------+------+----------------------------------+------+------+------+------+------+------|
      * | Shift|   6  |   7  |   8  |   9  |   0  |                                  |   =  | Left | Down | Right|  ?   | Shift|
      * .------+------+------+------+------+------+----------------------------------+------+------+------+------+------+------.
-     *                             | Ctrl | Lower| Space|                    | Enter| Raise|      |
+     *                             | GUI  | Lower| Space|                    | Enter| Raise|      |
      *                             .--------------------------------------------------------------.
      */
     [_RAISE] = LAYOUT(
         KC_LALT,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                         KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN,  KC_RPRN, KC_BSPC,
-        KC_LGUI,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                            KC_MINS, KC_PLUS, KC_UP,   KC_LBRC,  KC_RBRC, KC_GRV,
+        KC_LCTL,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                            KC_MINS, KC_PLUS, KC_UP,   KC_LBRC,  KC_RBRC, KC_GRV,
         KC_LSFT,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,                            KC_EQL,  KC_LEFT, KC_DOWN, KC_RIGHT, KC_QUES, KC_RSFT,
-                                             KC_LCTL, LOWER,   KC_SPC,         KC_ENT, RAISE,   XXXXXXX
+                                             KC_LGUI, LOWER,   KC_SPC,         KC_ENT, RAISE,   XXXXXXX
         ),
 
     /* Lower
